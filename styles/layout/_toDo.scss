@@ -1,0 +1,89 @@
+$color-black: black;
+$color-darkslategray: darkslategray;
+
+.toDo-title {
+  text-align: center;
+  color: $color-black;
+}
+
+.container2 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  padding: 30px;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+
+  .search {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+
+    form {
+      display: flex;
+
+      input {
+        padding: 15px 10px;
+        outline: none;
+        width: 400px;
+      }
+    }
+  }
+
+  .li-container {
+    background-color: white;
+    width: 100%;
+    color: $color-darkslategray;
+    margin-top: 20px;
+
+    ul {
+      padding: 0;
+
+      li p {
+        margin: 0;
+        padding: 15px;
+        width: 100%;
+      }
+    }
+  }
+
+  .btn-delete {
+    margin-left: auto;
+    border: none;
+    background-color: #e31746;
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+    outline: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 10%;
+    font-size: 1.2em;
+
+    &:hover {
+      cursor: pointer;
+      background-color: lightseagreen;
+    }
+  }
+
+  .btn-add {
+    padding: 5px 15px;
+    border: none;
+    color: white;
+    font-family: fantasy;
+    background-color: teal;
+    font-size: 1.4rem;
+    outline: none;
+
+    &:hover {
+      cursor: pointer;
+      background-color: darkcyan;
+    }
+  }
+
+  .empty {
+    color: $color-darkslategray;
+  }
+}

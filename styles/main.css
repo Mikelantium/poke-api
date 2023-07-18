@@ -1,0 +1,177 @@
+* {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #ee062b;
+  scroll-behavior: smooth;
+  background-image: url("https://w.wallha.com/ws/14/yATVkauL.png");
+}
+
+#pokedex {
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 20px;
+}
+
+.card:hover {
+  animation: bounce 0.5s linear;
+}
+
+@keyframes bounce {
+  20% {
+    transform: translateY(-6px);
+  }
+  40% {
+    transform: translateY(0px);
+  }
+  60% {
+    transform: translateY(-2px);
+  }
+  80% {
+    transform: translateY(0px);
+  }
+}
+.container {
+  padding: 40px;
+  margin: 0 auto;
+}
+.container h1 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 54px;
+  color: black;
+}
+.container .card {
+  list-style: none;
+  padding: 40px;
+  background-color: #f4f4f4;
+  color: #222;
+  text-align: center;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
+.container .card.is-flipped {
+  transform: rotateY(180deg);
+}
+.container .card-front, .container .card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+.container .card-front {
+  transform: rotateY(0deg);
+}
+.container .card-back {
+  transform: rotateY(180deg);
+}
+.container .card-title {
+  text-transform: uppercase;
+  font-size: 32px;
+  font-weight: normal;
+  margin-bottom: 0;
+}
+.container .card-subtitle {
+  font-weight: lighter;
+  color: #666;
+  margin-top: 5px;
+}
+.container .card-image {
+  height: 180px;
+}
+
+.header {
+  background-color: black;
+  padding: 10px;
+}
+.header nav ul {
+  display: flex;
+  gap: 20px;
+}
+.header nav ul a {
+  color: white;
+}
+
+.toDo-title {
+  text-align: center;
+  color: black;
+}
+
+.container2 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  padding: 30px;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+}
+.container2 .search {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+.container2 .search form {
+  display: flex;
+}
+.container2 .search form input {
+  padding: 15px 10px;
+  outline: none;
+  width: 400px;
+}
+.container2 .li-container {
+  background-color: white;
+  width: 100%;
+  color: darkslategray;
+  margin-top: 20px;
+}
+.container2 .li-container ul {
+  padding: 0;
+}
+.container2 .li-container ul li p {
+  margin: 0;
+  padding: 15px;
+  width: 100%;
+}
+.container2 .btn-delete {
+  margin-left: auto;
+  border: none;
+  background-color: #e31746;
+  color: white;
+  font-weight: bold;
+  padding: 5px 10px;
+  outline: none;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  width: 10%;
+  font-size: 1.2em;
+}
+.container2 .btn-delete:hover {
+  cursor: pointer;
+  background-color: lightseagreen;
+}
+.container2 .btn-add {
+  padding: 5px 15px;
+  border: none;
+  color: white;
+  font-family: fantasy;
+  background-color: teal;
+  font-size: 1.4rem;
+  outline: none;
+}
+.container2 .btn-add:hover {
+  cursor: pointer;
+  background-color: darkcyan;
+}
+.container2 .empty {
+  color: darkslategray;
+}/*# sourceMappingURL=main.css.map */
