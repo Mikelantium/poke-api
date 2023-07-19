@@ -53,6 +53,8 @@ body {
   padding: 40px;
   background-color: #f4f4f4;
   color: #222;
+  border: solid 2px black;
+  border-radius: 25px;
   text-align: center;
   position: relative;
   transform-style: preserve-3d;
@@ -86,6 +88,18 @@ body {
 }
 .container .card-image {
   height: 180px;
+}
+
+.header {
+  background-color: black;
+  padding: 10px;
+}
+.header nav ul {
+  display: flex;
+  gap: 20px;
+}
+.header nav ul a {
+  color: white;
 }
 
 .header {
@@ -171,7 +185,4 @@ body {
 .container2 .btn-add:hover {
   cursor: pointer;
   background-color: darkcyan;
-}
-.container2 .empty {
-  color: darkslategray;
 }/*# sourceMappingURL=main.css.map */

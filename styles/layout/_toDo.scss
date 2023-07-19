@@ -1,6 +1,22 @@
 $color-black: black;
 $color-darkslategray: darkslategray;
 
+.header{
+  background-color: black;
+  padding:  10px;
+
+  nav{
+  ul{
+      display: flex;
+      gap: 20px;
+
+      a{
+          color: white;
+
+      }
+  }
+}
+}
 .toDo-title {
   text-align: center;
   color: $color-black;
@@ -83,7 +99,4 @@ $color-darkslategray: darkslategray;
     }
   }
 
-  .empty {
-    color: $color-darkslategray;
-  }
 }

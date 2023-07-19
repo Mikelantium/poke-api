@@ -43,6 +43,8 @@ $padding: 40px;
     padding: $padding;
     background-color: #f4f4f4;
     color: #222;
+    border: solid 2px black;
+    border-radius: 25px;
     text-align: center;
     position: relative;
     transform-style: preserve-3d;

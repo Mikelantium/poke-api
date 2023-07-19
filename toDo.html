@@ -6,14 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TODO list</title>
     <link rel="stylesheet" href="./styles/main.css">
-    <script src="toDo.js" defer></script>
+    <script src="./script/toDo.js" defer></script>
 </head>
 <body>
+    <header>
+        <section class="header">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="toDo.html" id="enlace">Poke Agenda</a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+        </header>
+    <main>
     <div class="container2">
         <h1 class="toDo-title">Poke Agenda</h1>
         <div class="search">
             <form>
-                <input type="text" placeholder="Añadir pokeactividad...">
+                <input id="taskInput" type="text" placeholder="Añadir pokeactividad...">
                 <button class="btn-add">+</button>
             </form>
         </div>
@@ -22,10 +37,7 @@
                 
             </ul>
         </div>
-        <div class="empty">
-            <p>Estás al día!</p>
-        </div>
     </div> 
-    <script src="./main.js"></script>
+    </main>
 </body>
 </html>
